@@ -7,14 +7,15 @@ import "./home.css";
 
 const Home = () => {
   const { updateJobs } = useContext(JobsContext);
-  const [jobs, setJobs] = useState([]);
+  // const [jobs, setJobs] = useState([]);
   const [title, setTitle] = useState("");
   const printJobs = () => {
     let tempJobs = search(title);
-    setJobs(tempJobs);
-    console.log(tempJobs); // This is not printing empty array
-    console.log(jobs); // This is printing empty array
-    updateJobs(jobs);
+    // setJobs(tempJobs);
+    // console.log(tempJobs); // This is not printing empty array
+    // console.log(jobs); // This is printing empty array
+    // setTimeout(() => console.log(jobs), 1000);
+    updateJobs(tempJobs);
   };
 
   return (
@@ -43,6 +44,7 @@ const Home = () => {
               className="search-bar-submit"
               aria-label="submit search"
               onClick={printJobs}
+              id="search-btn"
             >
               <i className="fas fa-search"></i>
             </button>
