@@ -1,0 +1,29 @@
+.card {
+  min-height: 175px;
+  max-width: 200px;
+  border: 2px solid;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  background: #6c63ff;
+  margin: 1%;
+  padding: 10px;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-title {
+}
+
+.company-name {
+  padding: 5px 0;
+  width: 100%;
+}
+
+.company-location {
+  padding: 5px 0;
+}

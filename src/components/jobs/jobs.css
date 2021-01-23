@@ -1,0 +1,20 @@
+#jobs-section {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fafafa;
+  flex-wrap: wrap;
+}
+
+.jobs {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+  padding: 0 0 7.5% 0;
+}
