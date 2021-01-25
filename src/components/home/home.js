@@ -16,6 +16,8 @@ const Home = () => {
     // console.log(jobs); // This is printing empty array
     // setTimeout(() => console.log(jobs), 1000);
     updateJobs(tempJobs);
+
+    document.getElementById("jobs-section").scrollIntoView();
   };
 
   return (
